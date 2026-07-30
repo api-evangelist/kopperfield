@@ -1,0 +1,58 @@
+generated: '2026-07-19'
+method: probed
+description: >-
+  Results of probing the /.well-known/ discovery surface for Kopperfield's public hosts. The marketing
+  site (www.kopperfield.com) is a Next.js application that answers HTTP 200 with the same ~199KB
+  text/html SPA shell for EVERY unknown path, including all /.well-known/ paths — these are recorded
+  as soft-404s (present-but-not-a-real-document) and nothing was saved. api.kopperfield.com is a real,
+  live host but returns a genuine 404 for every /.well-known/ path probed. No real well-known document
+  was found, so no `WellKnown` or `SecurityTxt` pointer is wired in apis.yml.
+hosts:
+  - host: https://www.kopperfield.com
+    note: >-
+      Next.js catch-all returns 200 text/html SPA shell for every unknown path; treat every 200 below
+      as a soft 404. Verified by comparing body length (~199,000 bytes) and title against a known-bad
+      path.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        soft_404: true
+      - path: /.well-known/openid-configuration
+        status: 200
+        soft_404: true
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        soft_404: true
+      - path: /.well-known/api-catalog
+        status: 200
+        soft_404: true
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        soft_404: true
+  - host: https://api.kopperfield.com
+    note: >-
+      Live host (root returns a real 404 "Not Found" page; /health returns 200). No public API
+      documentation, OpenAPI definition or developer portal is published for this host, and
+      www.kopperfield.com/robots.txt disallows /api/ for all crawlers.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+found:
+  security_txt: false
+  openid_configuration: false
+  oauth_authorization_server: false
+  api_catalog: false
+  ai_plugin: false
+related:
+  llms_txt:
+    path: /llms.txt
+    status: 200
+    file: ../llms/kopperfield-llms.txt
+    note: Real llms.txt document published at the site root (not under /.well-known/); saved verbatim.
+  robots_txt:
+    path: /robots.txt
+    status: 200
+    note: >-
+      Real robots.txt with explicit per-AI-crawler allow rules (GPTBot, Claude-Web, ClaudeBot,
+      Google-Extended, PerplexityBot, CCBot) for public content, with /api/, /admin/, /dashboard/,
+      /provider/ and /partner/ disallowed.

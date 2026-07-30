@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  https://status.kopperfield.com/, https://www.kopperfield.com/terms,
+  https://www.kopperfield.com/about, https://www.kopperfield.com/robots.txt
+description: >-
+  Kopperfield operates a SaaS product for electrical contractors rather than a public API program, so
+  the lifecycle surface captured here is product-level rather than API-version-level. A public status
+  page exists; no public API versioning policy, deprecation policy, RFC 8594 Sunset/Deprecation header
+  support, changelog or numeric uptime SLA was found.
+versioning:
+  scheme: null
+  docs: null
+  notes: >-
+    No public API versioning policy is published. Kopperfield does not operate a documented public API;
+    api.kopperfield.com is a live internal host with no published reference and robots.txt disallows
+    /api/.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: >-
+    No public deprecation policy or RFC 8594 Sunset/Deprecation header support was found. No
+    `Deprecation` pointer is wired in apis.yml as a result.
+sla:
+  url: null
+  public_uptime_target: null
+  notes: >-
+    No numeric uptime SLA is published. Service commitments appear only in the general Terms of Service
+    at https://www.kopperfield.com/terms.
+status_page: https://status.kopperfield.com/
+status_page_notes: >-
+  Live hosted status page on a custom domain. Its component description still reads "Kopperfield
+  provides booking software for home owners and electricians to book EV charger installations" —
+  the company's pre-pivot EV-charging framing — and it exposes a single monitored component. No RSS or
+  Atom subscribe feed was surfaced.
+changelog: null
+product_history:
+  - year: 2022
+    event: Company founded; launched as an EV charger installation booking service.
+    source: https://www.kopperfield.com/about
+  - year: null
+    event: >-
+      Pivoted to a broader electrical contractor platform covering load calculations, single line
+      diagrams, panel schedules and permitting paperwork.
+    source: https://www.kopperfield.com/about
+deprecated_operations: []

@@ -1,0 +1,37 @@
+# Kopperfield
+
+> Professional software tools for electrical contractors and electricians. Create NEC-compliant load calculations, single line diagrams, and panel schedules with our free and paid tools.
+
+Kopperfield provides web-based tools designed to simplify electrical design and permitting paperwork for residential and commercial projects. Our tools are used by electrical contractors, electricians, inspectors, and instructors.
+
+Key features:
+- Free electrical load calculator with automatic square footage detection
+- Single line diagram creator with drag-and-drop templates
+- Panel schedule generator with circuit directories
+- NEC chatbot trained on 2017, 2020, and 2023 code editions
+- AI-powered panel photo analysis
+- Mobile app for iOS and Android
+
+## Free Tools
+
+- [Load Calculator](https://www.kopperfield.com/free-load-calculator): Create NEC-compliant electrical load calculations for residential and commercial projects
+- [Single Line Diagram](https://www.kopperfield.com/single-line-diagram): Design professional electrical single line diagrams with pre-built templates
+- [Panel Schedule](https://www.kopperfield.com/panel-schedule): Generate professional panel schedules with circuit directories
+- [NEC Chatbot](https://www.kopperfield.com/national-electrical-code-online): Ask questions about the National Electrical Code (2017, 2020, 2023 editions)
+
+## Documentation
+
+- [Residential Solutions](https://www.kopperfield.com/residential-electric): Overview of residential electrical design tools and workflows
+- [Commercial Solutions](https://www.kopperfield.com/commercial-electric): Commercial electrical design capabilities including 3-phase systems
+- [Pricing](https://www.kopperfield.com/pricing): Subscription plans and pricing for individual and team accounts
+
+## Resources
+
+- [Blog](https://www.kopperfield.com/blog): Articles about electrical contracting, load calculations, and NEC compliance
+- [About](https://www.kopperfield.com/about): Company mission and background
+- [Privacy Policy](https://www.kopperfield.com/privacy): Privacy policy and data handling practices
+- [Terms of Service](https://www.kopperfield.com/terms): Terms of service for using Kopperfield tools
+
+## Optional
+
+- [Inspectors & Instructors](https://www.kopperfield.com/inspectors-and-instructors): Information for electrical inspectors and instructors
