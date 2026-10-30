@@ -64,32 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Kopperfield builds design and permitting software for electrical contractors, electricians, inspectors
-and instructors. Founded in 2022 as an EV charger installation booking service, it has since become a
-broader contractor platform covering NEC-compliant residential and commercial load calculations,
-drag-and-drop single line diagrams, panel schedules with circuit directories, AI panel-photo analysis,
-and a National Electrical Code chatbot trained on the 2017, 2020 and 2023 code editions. Web plus iOS
-and Android apps.
+Kopperfield is a software company building design and permitting tools for electrical contractors, electricians, inspectors and instructors. Founded in 2022, the company started as an EV charger installation booking service and has since become a broader contractor platform whose stated mission is to "accelerate home electrification by giving contractors the tools they need to work faster, smarter, and with total confidence." The web and mobile product covers NEC-compliant residential and commercial load calculations, drag-and-drop single line diagrams, panel schedules with circuit directories, AI panel-photo analysis, and a National Electrical Code chatbot trained on the 2017, 2020 and 2023 code editions. Kopperfield publishes a public llms.txt and a public status page but does not currently operate a public developer program: there is no published API reference, OpenAPI definition, SDK, or developer portal, and robots.txt disallows crawling of /api/. The company is backed by General Catalyst, MCJ Collective, Lachy Groom and Designer Fund.
 
-- Website: https://www.kopperfield.com/
-- Status: https://status.kopperfield.com/
-- GitHub: https://github.com/kopperfieldco
-- Backed by: General Catalyst, MCJ Collective, Lachy Groom, Designer Fund
+**Areas:** Company · Electrical · Construction · Contractors · Permitting · Electrification · Building Codes · Field Service · Electric Vehicles · Software-as-a-Service
 
-## API posture
+## Kopperfield on APIs.io
 
-**Kopperfield does not currently operate a public developer program.** As of 2026-07-19 there is no
-published API reference, OpenAPI/AsyncAPI definition, developer portal, SDK, CLI or public Postman
-collection. `api.kopperfield.com` is a live host but serves no public documentation, and
-`robots.txt` disallows `/api/` for every crawler. No OpenAPI-dependent artifacts (mcp, overlays,
-errors, conventions, data-model, skills, scopes, authentication, arazzo) could be produced without
-fabricating them, so they are intentionally absent.
+Everything profiled for Kopperfield is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kopperfield/](https://apis.io/providers/kopperfield/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### Published properties
 
-| Artifact | File | Method |
-|---|---|---|
-| llms.txt | `llms/kopperfield-llms.txt` | searched (verbatim from `/llms.txt`) |
-| Well-Known | `well-known/kopperfield-well-known.yml` | probed — no real document found (site returns a 200 SPA shell for every unknown path) |
-| Lifecycle | `lifecycle/kopperfield-lifecycle.yml` | searched — public status page; no versioning/deprecation/SLA policy published |
-| Domain security | `security/kopperfield-domain-security.yml` | probed (TLS 1.3, HSTS 2y, SPF + DMARC `p=none`, no DNSSEC, no CAA) |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kopperfield Domain Security](https://apis.io/security/kopperfield/kopperfield-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kopperfield.com/)
+- [Pricing](https://www.kopperfield.com/pricing)
+- [Sign up](https://www.kopperfield.com/lp/free-account)
+- [Blog](https://www.kopperfield.com/blog)
+- [Terms of service](https://www.kopperfield.com/terms)
+- [Privacy policy](https://www.kopperfield.com/privacy)
+- [GitHub](https://github.com/kopperfieldco)
+- [Status](https://status.kopperfield.com/)
+
+## API Evangelist rating
+
+**Kin Score 8.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 6.6 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kopperfield/](https://apis.io/providers/kopperfield/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kopperfield: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kopperfield/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
